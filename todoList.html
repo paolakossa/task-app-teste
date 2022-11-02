@@ -11,60 +11,82 @@
 </head>
 <body>
    
-    <main class="container">
-    
-        <nav class="menu">
-        <img src="images/log.png" alt="" class="menu__logo">
-        <ul>
-        <ul class="menu__dash">
-            <div class="bloco">
-            <img src="images/chart-bar-light 1.svg" alt="" class="menu__img" >
-            <li><a href=# class="menu__titulo">Dashbord</a>
-            </div>
-            <ul class="submenu__dash">
-                <li class="submenu__dash--titulo">Categorias</li> 
-                <li><a href="#" class="submenu__dash--link">Todas</a></li>
-                <li><a href="#"class="submenu__dash--link">Urgentes</a></li>
-                <li><a href="#"class="submenu__dash--link">Importantes</a></li>
-                <li><a href="#"class="submenu__dash--link">Outras</a></li>
-                <li><a href="#"class="submenu__dash--link">Finalizados</a></li>
-            </ul>
-        </ul>
-            </li>
-            <div class="bloco">
-            <img src="images/Group 78.svg" alt="" class="menu__img">
-            <li><a href=# class="menu__titulo tarefas">Tarefas</a></li>
-            </div>
-            <div class="bloco">
-            <img src="images/Group 77.svg" alt="" class="menu__img">
-            <li><a href=# class="menu__titulo">Configurações</a></li>
-            </div>
-        </ul>
-        </nav>
-        <header class="avatar">
-            <div>
-            <img src="images/avatar.svg" alt="Foto de um homem">
-            </div>
-            <div>
-            <p>Eduardo Pereira da Costa</p>
-            <p>Front-end Developer</p>
-            </div>
-        </header>
+    <main>
 
-        <article class="todo">
+        <div class="container">
+        <section>
+            <nav class="menu">
+            <img src="images/log.png" alt="" class="menu__logo">
+            <ul>
+            <ul class="menu__dash">
+                <div class="bloco">
+                <img src="images/chart-bar-light 1.svg" alt="" class="menu__img" >
+                <li><a href=# class="menu__titulo">Dashbord</a>
+                </div>
+                <ul class="submenu__dash">
+                    <li class="submenu__dash--titulo">Categorias</li> 
+                    <li><a href="#" class="submenu__dash--link">Todas</a></li>
+                    <li><a href="#"class="submenu__dash--link">Urgentes</a></li>
+                    <li><a href="#"class="submenu__dash--link">Importantes</a></li>
+                    <li><a href="#"class="submenu__dash--link">Outras</a></li>
+                    <li><a href="#"class="submenu__dash--link">Finalizados</a></li>
+                </ul>
+            </ul>
+                </li>
+                <div class="bloco">
+                <img src="images/Group 78.svg" alt="" class="menu__img">
+                <li><a href=# class="menu__titulo tarefas">Tarefas</a></li>
+                </div>
+                <div class="bloco">
+                <img src="images/Group 77.svg" alt="" class="menu__img">
+                <li><a href=# class="menu__titulo">Configurações</a></li>
+                </div>
+            </ul>
+            </nav>
+        </section>
+        <section>
+            <header class="avatar">
+                <div>
+                <img src="images/avatar.svg" alt="Foto de um homem">
+                </div>
+                <div>
+                <p class="avatar__nome">Eduardo Pereira da Costa</p>
+                <p class="avatar__prof">Front-end Developer</p>
+                </div>
+            </header>
+        </section>
+        <section class="todo">
             <div class="todo__conteudo">
             <h1 class="todo__titulo">Minhas Tarefas</h1>
-            <p class="todo__frase">Olá <span></span>, você tem <span></span> tarefas pendentes.</p>
+            <p class="todo__frase">Olá <span class="todo__frase--color">Eduardo Pereira</span>, você tem <span class="todo__frase--color--sub">4 tarefas </span> pendentes.</p>
             <input type="search" placeholder="Buscar Tarefas"class="todo__pesquisa">
+            <button class="btn__pesquisa"><img src="images/search-regular 1.png" alt="Lupa"></button>
              
-            <ul>
-                <li>Oi</li>
-            </ul>
+            <ul class="lista" id="lista"></ul>
         </div>
-        </article>
+        <a href="#abrirModal" class="btn__adicionarTarefa"><img src="images/Group 62.svg" alt=""></a>
+        <div id="abrirModal" class="modal">
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <form class="form__modal" id="novoItem">
+                  <label for="tarefa" class="form__modal--labelTarefa">Cadastrar tarefa</label>
+                  <input type="text" class="form__modal--inputTarefa" id="tarefa">
+                  <label for="descricao" class="form__modal--labelDescricao">Descrição:</label>
+                  <textarea class="form__modal--inputDescricao" id="descricao"></textarea>
+              </form>
+            <div class="form__modal--footer">
+                <div class="form__modal--inputs">
+                <input type="radio" name="opcao" value="urgente" class="form__modal--inputRadio" id="urgente">
+                <label for="urgente" class="form__modal--label">Urgente</label>
+                <input type="radio" name ="opcao" value="importante" class="form__modal--inputRadio" id="importante">
+                <label for="importante" class="form__modal--label">Importante</label>
+                </div>
+              <button type="button" class="btn__formModal">Adicionar</button>
+            </div>
+          </div>
+        </section>
         
 
-    
+    </div>
 </main>
 
 <script src="js/menu.js"></script>

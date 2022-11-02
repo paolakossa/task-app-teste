@@ -1,0 +1,161 @@
+:root {
+    --branco: #ffffff;
+    --cinza-escuro: #283848;
+    --cinza-claro: #4E657B;
+    --azul:#2693FF;
+
+}
+
+body {
+    font-family: 'SVN-Gilroy', sans-serif;
+    height: 100vh;
+    width: 100wh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% 90%;
+   
+}
+
+.avatar{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    align-items: center;
+    
+}
+
+.menu{
+    background-color: var(--azul);
+    height: 100vh;
+    
+}
+
+.menu__logo{
+ width: 50%;
+ margin-left: 2rem;
+ margin-top: 1rem;
+}
+.menu__dash{
+    margin-top: 15rem;
+}
+.submenu__dash{
+    display: none;
+    background-color: #F4FBFF;
+    margin-left: 15rem;
+    margin-top: -10rem;
+    position: absolute;
+    height: 100%;
+    width: 10%;
+   
+}
+
+.submenu__dash--titulo{
+    color: var(--cinza-escuro);
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.submenu__dash--link{
+    color: var(--cinza-escuro);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+
+
+.submenu__dash--link::before{
+    content: url('../images/seta.svg');
+    padding: .75rem; 
+   
+
+}
+
+.bloco{
+    box-sizing: border-box;
+    width:135px;
+    height: 83px;
+    border: 1px solid #46A3FF;
+    margin-left: 1.5rem;
+    
+   
+}
+
+.bloco:hover{
+    background-color: #1182F2;
+}
+
+.menu__img{
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+}
+
+.menu__titulo{
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--branco);
+    margin-left: 2rem;
+    
+}
+.tarefas{
+    margin-left: 2rem;
+}
+
+.todo{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #E9F4FB ;
+}
+
+.todo__conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.todo__titulo{
+    font-size: 26px;
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    margin-right: 28rem;
+    margin-bottom: .5rem;
+}
+
+.todo__frase{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--cinza-claro);
+    margin-right:22rem;
+    margin-bottom: .5rem;
+}
+
+.todo__pesquisa{
+    width: 633px;
+    height: 51px;
+    border: 2px solid #BFDAEB;
+    border-radius: 5px;
+}
+
+.todo__pesquisa::placeholder{
+    background-image: url(../images/search-regular\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    color: #A6C1D2;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0.5rem;
+    
+
+}
+  

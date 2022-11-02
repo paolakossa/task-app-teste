@@ -1,0 +1,122 @@
+:root {
+    --branco: #ffffff;
+    --cinza-escuro: #283848;
+    --cinza-claro: #4E657B;
+    --azul:#2693FF;
+
+}
+
+body {
+    font-family: 'SVN-Gilroy', sans-serif;
+    height: 100vh;
+    width: 100wh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 35% 60%;
+}
+
+.container__visual{
+    background-image: url("../images/retangulo1.png");
+    height: 100vh;
+    
+}
+
+.container__logo{
+    position: relative;
+    margin-top:45%;
+    margin-left: 25%;
+
+    
+}
+
+.container__titulo{
+    color: var(--branco);
+    font-size: 48px;
+    text-align: center;
+    margin-left: .5rem;
+
+}
+
+.container__titulo--bold{
+    font-weight: 700;
+    text-align: center;
+    margin-left: .5rem;
+}
+
+.container__frase{
+    color: var(--branco);
+    font-size: 16px;
+    text-align: center;
+    margin-right: 6rem;
+}
+
+.form__login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17rem;
+}
+
+.form__login--titulo{
+    margin-right: 6rem;
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cinza-escuro);
+}
+
+.form__login--labelNome{
+    margin-right: 12rem;
+    margin-bottom: .5rem;
+    color: var(--cinza-claro);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form__login--labelSenha{
+    margin-right: 20rem;
+    margin-bottom: .5rem;
+    margin-top: 1.5rem;
+    color: var(--cinza-claro);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form__login--input{
+    box-sizing: border-box;
+    width: 23rem;
+    height: 3.438rem;
+    border: 2px solid #BFDAEB;
+    border-radius: 5px;
+    
+}
+
+.form__login--input:hover{
+    border: 2px solid #2693FF;
+    
+}
+.form__login--btn{
+    width: 23rem;
+    height: 3.438rem;
+    background: #1AD18F;
+    border-radius: 5px;
+    border: none;
+    color: var(--branco);
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.form__login--btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.form__login--link{
+    margin-right: 14rem;
+    margin-top: 3rem;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--azul);
+}

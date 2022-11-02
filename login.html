@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="http://fonts.cdnfonts.com/css/svn-gilroy" rel="stylesheet">            
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="container__visual">
+                <div class="container__logo">
+                <img src="images/log.png" alt="Logo da empresa" >
+                </div>
+                <h1 class="container__titulo"><span class="container__titulo--bold">FACILITA</span class="">TASKS</h1>
+                <p class="container__frase">Gestão de tarefas pessoais</p>
+            </div>
+            <div>
+                <form class="form__login">
+                <p class="form__login--titulo">Entre com seus dados de acesso.</p>
+                <label for="email" class="form__login--labelNome">Nome de usuário ou e-mail:</label>
+                <input type="text" id="email" class="form__login--input" required>
+                <label for="senha" class="form__login--labelSenha">Senha:</label>
+                <input type="password" id="senha" class="form__login--input" required>
+                <button type="submit" id="btnLogin" class="form__login--btn">Entrar</button>
+                <a href="#" class="form__login--link">Esqueci minha senha</a>    
+            </form>
+
+            </div>
+        </div>
+
+    </main>
+<script src="js/login.js"></script>   
+</body>
+</html>

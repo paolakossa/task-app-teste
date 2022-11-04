@@ -1,10 +1,5 @@
 const btn = document.querySelector('.btn__formModal');
 const lista = document.getElementById('lista'); 
-const itens = JSON.parse(localStorage.getItem('itens')) || []; 
-
-itens.forEach ((elemento) => {
-	criaElemento(elemento)
-});
 
 
 btn.addEventListener('click', () =>{
@@ -38,16 +33,27 @@ btn.addEventListener('click', () =>{
        
     }
         lista.appendChild(priori)
+  
 
     checkbox.addEventListener('click', ()=>{
+        if(novoItem.style.opacity != '50%' &&  novoItem.style.backgroundColor !='#BFDAEB' && novoItem.style.textDecoration != 'line-through' ) {
         novoItem.style.opacity = '50%';
         novoItem.style.backgroundColor ='#BFDAEB';
-        novoItem.style.textDecoration = 'line-through';
+        novoItem.style.textDecoration = 'line-through'; 
+
+
+    } else {
+        novoItem.style.opacity = '100%';
+        novoItem.style.backgroundColor ='#FFFFFF';
+        novoItem.style.textDecoration = 'none';
+    }
+
     })
+
     
-    pontinho.addEventListener('click', ()=>{
-    alert('oi')
-    })
+    
 })
 
 
+    
+       
